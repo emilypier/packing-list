@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>packing</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cousine&family=Modak&family=Spline+Sans:wght@400;600&display=swap" rel="stylesheet"></head>
+
+<body>
+
+  <header>
+    <h1 class="page-title">music festival packing</h1>
+    <p>click the button below to add a new item.</p>
+    <form id="task-form">
+      <div class="form-group">
+        <input type="text" name="task-name" placeholder="enter item" />
+      </div>
+      <div class="form-group">
+        <select name="task-type" class="select-dropdown">
+          <option value="" disabled selected>pick a task type</option>
+          <option value="Print">Print</option>
+          <option value="Web">Web</option>
+          <option value="Mobile">Mobile</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button class="btn" id="save-task" type="submit">add item</button>
+      </div>
+    </form>
+  </header>
+
+  <main class="page-content" id="page-content">
+    <!-- items to get -->
+    <section class="task-list-wrapper">
+      <h2 class="list-title">items to get</h2>
+      <ul class="task-list" id="tasks-to-do"></ul>
+    </section>
+
+    <!-- items bought -->
+    <section class="task-list-wrapper">
+      <h2 class="list-title">items bought</h2>
+      <ul class="task-list" id="tasks-in-progress"></ul>
+    </section>
+
+    <!-- items packed -->
+    <section class="task-list-wrapper">
+      <h2 class="list-title">items packed</h2>
+      <ul class="task-list" id="tasks-completed"></ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy;2020 by emilypierson
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
