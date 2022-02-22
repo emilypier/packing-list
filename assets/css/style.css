@@ -3,9 +3,9 @@
 }
 
 :root {
-  --primary: #E8070B;
-  --secondary: #D43A81;
-  --tertiary: #87AE27;
+  --snow: #e5e5e5;
+  --secondary: #636363;
+  --tertiary: #f3d345;
   --grey: rgb(170, 170, 170);
   font-size: 62.5%;
 }
@@ -18,18 +18,18 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: 'Spline Sans', sans-serif;
+  font-family: 'Cousine', sans-serif;
 }
 
 header {
   background: white;
   padding: 30px 25px;
-  border-bottom: 4px dashed var(--primary);
+  /* border-bottom: 4px solid whitesmoke; */
 }
 
 header p {
   color: var(--secondary);
-  margin: 5px 0 20px;
+  margin: 100px 0 20px;
   font-size: 2rem;
 }
 
@@ -50,8 +50,7 @@ form input {
   padding: 12px;
   width: 100%;
   font-size: 2.2rem;
-  border: 2px solid var(--grey);
-  border-radius: 12px;
+  border: 2px solid var(--tertiary);
 }
 
 form .form-group {
@@ -68,12 +67,25 @@ footer {
   border-top: 5px solid var(--primary);
 }
 
-.page-title {
-  font-family: 'Spline Sans', sans-serif;
-  color: var(--primary);
+.text, img {
+  position: absolute;
+  top: 1vh;
+  left: calc(5% - 1vh);
+  height:auto; 
+  width: 300px;
+}
+
+#page-title {
+  font-family: 'Dela Gothic One', sans-serif;
+  color: white;
   margin-bottom: 5px;
   margin-top: 0;
   font-size: 6em;
+  --glow: var(--secondary);
+  display: block;
+  /* transform: rotate(-2deg); */
+  font-weight: 700;
+  text-shadow: 0 0 0.125vh var(--glow), 0 0 0.125vh var(--glow), 0 0 0.25vh var(--glow), 0 0 0.5vh var(--glow), 0 0 0.75vh var(--glow);
 }
 
 .page-content {
@@ -100,8 +112,11 @@ footer {
   padding: 15px;
   height: calc(100% - 50px);
   background: rgb(255, 255, 255);
-  border-radius: 12px;
-  border: 2px dashed var(--grey);
+  border-radius: 9px;
+  border: 2px solid var(--tertiary);
+  --glow: var(--tertiary);
+  box-shadow: 0 0 0.125vh var(--glow), 0 0 0.125vh var(--glow), 0 0 0.25vh var(--glow), 0 0 0.5vh var(--glow), 0 0 0.75vh var(--glow);
+
 }
 
 .task-item {
@@ -175,8 +190,8 @@ footer {
   width: 100%;
   max-width: 100%;
   margin: 0;
-  border: 2px solid var(--grey);
-  border-radius: 12px;
+  border: 2px solid var(--tertiary);
+
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -198,10 +213,10 @@ footer {
   display: none;
 }
 
-.select-dropdown:hover,
+/* .select-dropdown:hover,
 .select-status:hover {
   border-color: #888;
-}
+} */
 
 .select-dropdown:focus,
 .select-status:focus {
